@@ -1,0 +1,238 @@
+/* Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+.space-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #1a0b2e 0%, #30115e 100%);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.galaxy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 0, 255, 0.1), transparent);
+  transform: rotate(-45deg);
+  filter: blur(80px);
+}
+
+.mountains {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30vh;
+  background: linear-gradient(180deg, transparent 0%, #30115e 40%);
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M0 100 L0 60 Q25 40 50 60 T100 60 L100 100 Z" fill="black"/></svg>');
+  mask-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M0 100 L0 60 Q25 40 50 60 T100 60 L100 100 Z" fill="black"/></svg>');
+}
+
+.bright-star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  top: 30%;
+  left: 50%;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.8),
+              0 0 80px 40px rgba(255, 0, 255, 0.5);
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.planets {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.planet-1 {
+  width: 60px;
+  height: 60px;
+  right: 10%;
+  top: 20%;
+  background: radial-gradient(circle at 30% 30%, #ff00ff, transparent);
+}
+
+.planet-2 {
+  width: 40px;
+  height: 40px;
+  right: 5%;
+  bottom: 30%;
+  background: radial-gradient(circle at 30% 30%, #a000ff, transparent);
+}
+
+.planet-3 {
+  width: 80px;
+  height: 80px;
+  left: 8%;
+  top: 15%;
+  background: radial-gradient(circle at 30% 30%, #7000ff, transparent);
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.intro-section {
+    flex: 1;
+    text-align: center;
+    padding-right: 3rem;
+  }
+
+.intro-section h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.typewriter-container {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    min-height: 3rem;
+  }
+  
+  .Typewriter__cursor {
+    color: #ff00ff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+  }
+  
+
+.intro-section p {
+  font-size: 1.5rem;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.animation-section {
+  flex: 1;
+  position: relative;
+  height: 400px;
+}
+
+.code-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(13, 5, 26, 0.5);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 0, 255, 0.2);
+    backdrop-filter: blur(5px);
+  }
+
+  .code-text {
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+.keyword { color: #ff00ff; }
+.string { color: #00ff00; }
+.comment { color: #666; }
+
+.network-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.node {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ff00ff;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+}
+
+.node1 { top: 20%; left: 20%; }
+.node2 { top: 50%; right: 20%; }
+.node3 { bottom: 20%; left: 40%; }
+
+.connection-line {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(90deg, #ff00ff, #7000ff);
+  opacity: 0.6;
+}
+
+.line1 {
+  width: 150px;
+  top: 25%;
+  left: 25%;
+  transform: rotate(45deg);
+}
+
+.line2 {
+  width: 180px;
+  bottom: 35%;
+  right: 25%;
+  transform: rotate(-45deg);
+}
+
+.data-packet {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  top: 22%;
+  left: 22%;
+  animation: movePacket 3s linear infinite;
+}
+
+@keyframes movePacket {
+  0% {
+    top: 22%;
+    left: 22%;
+  }
+  25% {
+    top: 50%;
+    left: 70%;
+  }
+  50% {
+    top: 75%;
+    left: 40%;
+  }
+  75% {
+    top: 50%;
+    left: 22%;
+  }
+  100% {
+    top: 22%;
+    left: 22%;
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}

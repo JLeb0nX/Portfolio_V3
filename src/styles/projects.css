@@ -1,0 +1,180 @@
+/* Projects.css */
+.projects-background {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1a0b2e 0%, #30115e 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .nebula-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nebula {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 0, 255, 0.1), transparent);
+    filter: blur(80px);
+    animation: nebulaFloat 20s ease infinite;
+  }
+  
+  .nebula-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, rgba(63, 0, 113, 0.1), transparent);
+    filter: blur(90px);
+    animation: nebulaFloat 25s ease infinite reverse;
+  }
+  
+  .shooting-stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(1px 1px at 50% 50%, white, rgba(0, 0, 0, 0));
+    background-size: 200px 200px;
+    animation: shootingStars 20s linear infinite;
+  }
+  
+  @keyframes nebulaFloat {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(100px, 100px) rotate(180deg); }
+    100% { transform: translate(0, 0) rotate(360deg); }
+  }
+  
+  @keyframes shootingStars {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-200px); }
+  }
+  
+  .projects-container {
+    position: relative;
+    padding: 6rem 2rem 2rem;
+    z-index: 1;
+  }
+  
+  .projects-container h2 {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    background: rgba(26, 11, 46, 0.5);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 0, 255, 0.2);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover .project-image img {
+    transform: scale(1.05);
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .project-content h3 {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-content p {
+    color: #fff;
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .github-link, .pdf-link {
+    position: relative;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+    background: rgba(255, 0, 255, 0.1);
+    border-radius: 5px;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .github-link:hover {
+    background: #ff00ff;
+    color: #fff;
+    box-shadow: 0 0 5px #ff00ff,
+                0 0 25px #ff00ff;
+  }
+  
+  .pdf-link:hover {
+    background: #7000ff;
+    color: #fff;
+    box-shadow: 0 0 5px #7000ff,
+                0 0 25px #7000ff;
+  }
+  
+  .github-link span, .pdf-link span {
+    position: absolute;
+    display: block;
+  }
+  
+  .github-link span:nth-child(1),
+  .pdf-link span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff00ff);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% { left: -100%; }
+    50%, 100% { left: 100%; }
+  }
