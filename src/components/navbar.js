@@ -37,12 +37,7 @@ const SpaceNav = () => {
   return (
     <nav className="space-nav">
       <div className="nav-logo">Portfolio</div>
-      <button className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+      <div className="nav-links">
         <a 
           href="#home" 
           onClick={(e) => {
@@ -87,6 +82,58 @@ const SpaceNav = () => {
           <i className="fa-solid fa-envelope"></i>
           Contact
         </a>
+      </div>
+      <div className="mobile-nav">
+        <button 
+          className={`mobile-menu-btn ${isMenuOpen ? 'active' : ''}`}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
+          <a 
+            href="#home"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('home');
+            }}
+          >
+            <i className="fa-solid fa-home"></i>
+            Accueil
+          </a>
+          <a 
+            href="#about"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('about');
+            }}
+          >
+            <i className="fa-solid fa-user"></i>
+            À propos
+          </a>
+          <a 
+            href="#projects"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('projects');
+            }}
+          >
+            <i className="fa-solid fa-code"></i>
+            Projets
+          </a>
+          <a 
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('contact');
+            }}
+          >
+            <i className="fa-solid fa-envelope"></i>
+            Contact
+          </a>
+        </div>
       </div>
     </nav>
   );
