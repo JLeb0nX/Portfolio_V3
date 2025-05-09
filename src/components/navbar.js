@@ -1,9 +1,10 @@
 // SpaceNav.jsx
 import React, { useState, useEffect } from 'react';
-import '../styles/navbar.css';
+import '../styles/navbar.css'; // Import the CSS file for styling
 
 const SpaceNav = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,13 +30,19 @@ const SpaceNav = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
     }
   };
 
   return (
     <nav className="space-nav">
       <div className="nav-logo">Portfolio</div>
-      <div className="nav-links">
+      <button className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <a 
           href="#home" 
           onClick={(e) => {
