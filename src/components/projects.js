@@ -6,6 +6,8 @@ import réseau from '../assets/images/reseau_sécurisé.png'; // Import the netw
 import PDFRéseau from '../assets/PDF/Rapport_du_projet_réseau_sécurisé.pdf'; // Import the PDF report for network security
 import hiddenKey from '../assets/images/hiddenkey.png'; // Import the HiddenKey image
 import PDFHiddenkey from '../assets/PDF/Rapport_du_projet_application_communicante.pdf'; // Import the PDF report for HiddenKey
+import SI from '../assets/images/SI.png'; // Import the SI image
+import PDFSI from '../assets/PDF/Rapport_du_projet_SI.pdf'; // Import the PDF report for SI
 
 const Projects = () => {
   const projects = [
@@ -19,14 +21,20 @@ const Projects = () => {
     {
       title: "Portfolio",
       image: portfolio,
-      description: "Portfolio personnel développé avec React, intégrant des animations et effets visuels modernes",
+      description: "Portfolio personnel développé avec React, mettant en avant mes compétences et projets.",
       github: "https://github.com/JLeb0nX/Portfolio_V3.git"
     },
     {
-      title: "Sécurisation Réseau",
+      title: "Concevoir un réseau sécurisé",
       image: réseau,
-      description: "Mise en place d'une infrastructure réseau sécurisée avec GNS3, incluant firewall et VLANs",
+      description: "Mise en place d'une infrastructure réseau sécurisée avec GNS3, incluant firewall, VLANS, et VPN.",
       pdf: PDFRéseau,
+    },
+    {
+      title: "Sécuriser un système d'information",
+      image: SI,
+      description: "Mise en place d'une architecture sécurisée avec Virtualbox",
+      pdf: PDFSI,
     }
   ];
 
