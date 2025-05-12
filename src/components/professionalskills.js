@@ -11,6 +11,8 @@ const ProfessionalSkills = () => {
       { name: 'GNS3', icon: '🌐', description: 'Virtualisation de réseaux' },
       { name: 'Cisco Packet Tracer', icon: '🔌', description: 'Simulation réseau' },
       { name: 'Wireshark', icon: '🦈', description: 'Analyse de paquets' },
+      { name: 'PFsense', icon: '🔥', description: 'Firewall' },
+      { name: 'Stormshield', icon: '🔥', description: 'Firewall' },
       { name: 'Putty', icon: '💻', description: 'Emulateur de terminal' }
     ],
     développement: [

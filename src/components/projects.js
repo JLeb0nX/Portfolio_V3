@@ -8,6 +8,7 @@ import hiddenKey from '../assets/images/hiddenkey.png'; // Import the HiddenKey 
 import PDFHiddenkey from '../assets/PDF/Rapport_du_projet_application_communicante.pdf'; // Import the PDF report for HiddenKey
 import SI from '../assets/images/SI.png'; // Import the SI image
 import PDFSI from '../assets/PDF/Rapport_du_projet_SI.pdf'; // Import the PDF report for SI
+import wazuh from '../assets/images/wazuh.png'; // Import the Wazuh image
 
 const Projects = () => {
   const projects = [
@@ -35,6 +36,11 @@ const Projects = () => {
       image: SI,
       description: "Mise en place d'une architecture sécurisée avec Virtualbox",
       pdf: PDFSI,
+    },
+    {
+      title: "Mise en place d'un SIEM",
+      image: wazuh,
+      description: "Mise en place d'un SIEM en entreprise pour la gestion des logs et la détection d'intrusions. (En cours)",
     }
   ];
 
