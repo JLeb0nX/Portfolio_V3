@@ -1,24 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.ce14d990.css",
-    "main.js": "/static/js/main.71a62114.js",
+    "main.js": "/static/js/main.fe6b7e7f.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/IUTJPO2024-125.jpg": "/static/media/IUTJPO2024-125.04364c20e8ad9adb1b99.jpg",
     "static/media/IUTJPO2024-126.jpg": "/static/media/IUTJPO2024-126.279569a01ea44eebbb2d.jpg",
+    "static/media/Rapport_du_projet_SI.pdf": "/static/media/Rapport_du_projet_SI.b93e40d84f2d1cb67d85.pdf",
     "static/media/Rapport_du_projet_application_communicante.pdf": "/static/media/Rapport_du_projet_application_communicante.0dc9a131a6106a2e04db.pdf",
     "static/media/Rapport_du_projet_réseau_sécurisé.pdf": "/static/media/Rapport_du_projet_réseau_sécurisé.45da9036459968ac082c.pdf",
     "static/media/CV_LEBON_JOHAN.pdf": "/static/media/CV_LEBON_JOHAN.0435a61756d03802ddb2.pdf",
     "static/media/IMG_2917.jpg": "/static/media/IMG_2917.8b0c7a288753600a8bd3.jpg",
+    "static/media/SI.png": "/static/media/SI.6cac28b959d094728909.png",
     "static/media/Portfolio.png": "/static/media/Portfolio.2739b681227861027c03.png",
     "static/media/hiddenkey.png": "/static/media/hiddenkey.1fab7d9fc64484bac935.png",
     "static/media/reseau_sécurisé.png": "/static/media/reseau_sécurisé.eda86113b02197d5b767.png",
     "index.html": "/index.html",
     "main.ce14d990.css.map": "/static/css/main.ce14d990.css.map",
-    "main.71a62114.js.map": "/static/js/main.71a62114.js.map",
+    "main.fe6b7e7f.js.map": "/static/js/main.fe6b7e7f.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce14d990.css",
-    "static/js/main.71a62114.js"
+    "static/js/main.fe6b7e7f.js"
   ]
 }
